@@ -1,0 +1,154 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    color: #1c1e21;
+    line-height: 1.34;
+}
+
+body{
+    margin: 50px;
+}
+
+.navbar-brand img{
+    width: 35px;
+    height: 35px;
+}
+
+header{
+    border-bottom: 1px solid #E7E7E8;
+    height: 5.938rem;
+    position: fixed;
+    top: -16px;
+    width: 100%;
+    background-color: #ffffff;
+    opacity: .97;
+}
+
+.nav-header-FDPF{
+    font-size: 12px;
+}
+
+#main{
+    margin-top: 120px;
+}
+
+.heading h1 {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(89deg, #0099FF -2.17%, #A033FF 19.1509%, #FF5280 50.23%, #FF7061 33.26%);
+    font-size: 4.7rem;
+    line-height: 85px;
+    letter-spacing: -4px;
+    font-weight: 600;
+    padding: 0 0 8px;
+    text-align: left;
+}
+
+.subheading{
+    margin-bottom: 2.8rem;
+}
+
+.form input{
+    margin-top: 1rem;
+    box-sizing: border-box;
+    width: 19rem;
+    height: 2rem;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(245, 245, 245);
+}
+
+.login{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.login button{
+    width: 96px;
+    height: 45px;
+    font-weight: 700;
+    border-radius: 23px;
+    margin-right: 32px;
+}
+
+.login a{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.download-img img{
+    height: 44px;
+    width: auto;
+}
+
+.side-bg{
+    width: 100%;
+}
+
+footer{
+    margin-top: 5rem;
+    font-size: 13px;
+    padding: 20px 30px;
+    text-align: center;
+}
+.meta-2023{
+    font-weight: 600;
+}
+.spacing-footer{
+    margin-left: 60px;
+}
+.meta-logo-footer{
+    width: 135px;
+}
+
+.spacing-footer br{
+    display: none;
+}
+
+@media (max-width:991px) {
+    .spacing-footer br{
+        display: block;
+    }
+    .spacing-footer{
+        margin-left: 40px;
+    }
+    /* .nav-menu-elements{
+        padding-right:60px
+    } */
+}
+
+@media screen and (max-width:991px){
+    .heading h1 {
+        color: transparent;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(89deg, #0099FF -2.17%, #A033FF 19.1509%, #FF5280 50.23%, #FF7061 33.26%);
+        font-size: 3.75rem;
+        line-height: 50px;
+        letter-spacing: -2px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .subheading p{
+        margin-top: -21px;
+        text-align: center;
+    }
+
+    .br2{
+        display: none;
+    }
+
+    .centre-screen{
+        display: grid;
+        justify-content: center;
+        transform: translateX(-50);
+    }
+
+    .form input{
+        width: 30rem;
+    }
+
+    .centre-screen{
+        margin-top: 20px;
+    }
+}

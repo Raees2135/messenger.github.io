@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger</title>
+
+    <link href="style.css" rel="stylesheet">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+
+    <header>
+        <div class="container-fluid ">
+            <div class="row ms-xl-5 ">
+                <div class="col-lg-12 pt-3">
+                    <nav class="navbar navbar-expand-md bg-white ps-5 pe-5">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">
+                                <img class="messenger-logo-img"
+                                    src="images/Logo.png"
+                                    alt="Messenger-logo"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse pt-3" id="navbarTogglerDemo02">
+                                <ul class="nav-menu-elements navbar-nav ms-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active nav-header-FDPF" href="#">Features</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active nav-header-FDPF" href="#">Desktop App</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active nav-header-FDPF" href="#">Privacy and safety</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active nav-header-FDPF" href="#">For Developers</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" id="main">
+        <div class="row">
+            <div class="hd1 col-lg-6">
+                <div class="heading">
+                    <h1>Hang out <br class="br1">anytime,<br class="br2">anywhere </h1>
+                </div>
+                <div class="centre-screen">
+                    <div class="subheading">
+                        <p>Messenger make it easy and fun to stay close to your</p>
+                        <p class="p2">favourite people</p>
+                    </div>
+
+                    <!--login form-->
+                    <form id="login-form">
+                        <div class="form">
+                            <input id="text" type="text" placeholder="Email address or phone number" name="text"><br>
+                            <div class="email-error"></div>
+                            <input id="password" type="text" placeholder="Password" name="password">
+                            <div class="email-error"></div>
+                        </div>
+                        <div class="login">
+                            <button type="button" class="btn btn-primary">Log In</button>
+                            <a href="forgotten-password">Forgotten your password?</a>
+                        </div>
+                        <input type="checkbox">
+                        <label class="checkbox">Keep me signed in</label>
+                    </form>
+                    <div>
+                        <span class="download-img">
+                            <a href="#"><img src="images/microsoft.png" alt=""></a>
+                        </span>
+                        <span class="download-img">
+                            <a href=""><img src="images/App-store.svg" alt=""></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img class="side-bg" src="images/side-bg.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-xl">
+        <span class="meta-2023">© Meta 2023</span>
+        <span>. The Apple and Google Play logos are trademarks of their respective owners.</span>
+        <span class="spacing-footer"><br></span>
+        <span>Privacy Policy</span>
+        <span class="spacing-footer"></span>
+        <span>Cookie Policy</span>
+        <span class="spacing-footer"></span>
+        <span>Terms</span>
+        <span class="spacing-footer"></span>
+        <span class="btn-group dropup">
+            <button type="button" class="btn btn-transparent dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                English
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Čeština</a></li>
+                <li><a class="dropdown-item" href="#">Dansk</a></li>
+                <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                <li><a class="dropdown-item" href="#">English (UK)</a></li>
+                <li><a class="dropdown-item" href="#">English (US)</a></li>
+                <li><a class="dropdown-item" href="#">हिन्दी</a></li>
+                <li><a class="dropdown-item" href="#">Italiano</a></li>
+                <li><a class="dropdown-item" href="#">Português (Brasil)</a></li>
+                <li><a class="dropdown-item" href="#">日本語</a></li>
+                <li><a class="dropdown-item" href="#">Polski</a></li>
+            </ul>
+        </span>
+        <img class="meta-logo-footer" src="images/meta.png" alt="">
+
+
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+
+    
+</body>
+</html>

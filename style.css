@@ -47,38 +47,52 @@ header{
     margin-bottom: 2.8rem;
 }
 
-.form input{
-    margin-top: 1rem;
-    box-sizing: border-box;
-    width: 19rem;
-    height: 2rem;
+.form-below-text{
+    width: 320px;
+    background: rgba(0, 0, 0, .04);
     border: none;
-    border-radius: 6px;
-    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 16px;
+    height: 36px;
+    margin-bottom: 12px;
+    padding: 8px 16px;
+}
+.form-below-text::placeholder{
+    color:rgba(0, 0, 0, .4);
+    font-size: 16px;  
 }
 
-.login{
-    display: flex;
-    margin-top: 20px;
-    align-items: center;
+#user-error{
+    color: red;
+    font-style: italic;
+    font-size: 15px;
 }
 
-.login button{
-    width: 96px;
-    height: 45px;
-    font-weight: 700;
-    border-radius: 23px;
-    margin-right: 32px;
+#password-error{
+    color: red;
+    font-style: italic;
+    font-size: 15px;
 }
 
-.login a{
-    font-size: 12px;
-    font-weight: 700;
+.btn{
+    width: 100px;
 }
 
-.download-img img{
+.submit-forget-password button{
+    margin-right: 20px;
+}
+.submit-forget-password{
+    margin-bottom: 40px;
+}
+.download-link-img{
     height: 44px;
     width: auto;
+}
+
+.keep-signin{
+    margin-bottom: 20px;
 }
 
 .side-bg{

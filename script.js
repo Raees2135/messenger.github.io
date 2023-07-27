@@ -1,16 +1,16 @@
 
-const logInForm = document.getElementById("login-form")
+const signInForm = document.getElementById("signin-form")
 
-logInForm.addEventListener("submit", valid);
+signInForm.addEventListener("submit", valid);
 function valid() {
 
     let password = document.getElementById("password").value;
     let userInfo = document.getElementById("userInfo").value;
-    let userError = document.getElementById("user-error");
-    let passwordError = document.getElementById("password-error");
+    let userError = document.getElementById("user-error")
+    let passwordError = document.getElementById("password-error")
     if(userInfo=="")
     {
-        userError.innerHTML="number or email please"
+        userError.innerHTML="Number or email please"
     }else if(!isNaN(userInfo))
     {
         if(userInfo<Math.pow(10,9))
@@ -20,18 +20,17 @@ function valid() {
     {
             userError.innerHTML="Enter a valid email"
     }
-    else{
-        userError.innerHTML=""
-    }
 
-    if(password=="")
+    else if(password=="")
     {
-        passwordError.innerHTML="Why can't you type the password"
+        passwordError.innerHTML="Type the password"
         
-    }else if (password.length<6) {
-        passwordError.innerHTML="enter minimum 6 letters"
+    }else if (password.length<8) {
+        passwordError.innerHTML="Enter atleast 8 letters"
     }
     else{
         passwordError.innerHTML="";
+        userError.innerHTML="";
+        alert("Login Successfull")
     }
 }

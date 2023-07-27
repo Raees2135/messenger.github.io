@@ -65,28 +65,30 @@
                     </div>
 
                     <!--login form-->
-                    <form id="login-form">
-                        <div class="form">
-                            <input id="user-info" type="text" placeholder="Email address or phone number" name="text"><br>
-                            <div><span class="user-error"></span></div><br>
-                            <input id="password" type="password" placeholder="Password" name="password"><br>
-                            <div><span class="password-error"></span></div><br>
+                    <form id="signin-form" action="#">
+                        <input type="text" class="form-below-text" id="userInfo" placeholder="Email or Phone number"
+                            aria-label="First name">
+                            <div><span id="user-error"></span></div>
+                        <br>
+                        <input type="Password" class="form-below-text" id="password" placeholder="Password" aria-label="Last name">
+                        <div class="submit-forget-password">
+                            <div><span id="password-error"></span></div>
+                            <button onclick="valid()" class="btn btn-primary rounded-pill" type="submit">Log in</button>
+                            <a href="#">Forgetten your Password?</a>
                         </div>
-                        <div class="login">
-                            <button type="submit" class="btn btn-primary">Log In</button>
-                            <a href="forgotten-password">Forgotten your password?</a>
+                        <div class="keep-signin">
+                            <input type="checkbox" value="1" class="check-box">
+                            <label class="ml-2" id="n">Keep me signed in</label>
                         </div>
-                        <input type="checkbox">
-                        <label class="checkbox">Keep me signed in</label>
+                        <div>
+                            <span>
+                                <img class="download-link-img" src="images/App-store.svg">
+                            </span>
+                            <span>
+                                <img class="download-link-img" src="images/microsoft.png">
+                            </span>
+                        </div>
                     </form>
-                    <div>
-                        <span class="download-img">
-                            <a href="#"><img src="images/microsoft.png" alt=""></a>
-                        </span>
-                        <span class="download-img">
-                            <a href=""><img src="images/App-store.svg" alt=""></a>
-                        </span>
-                    </div>
                 </div>
             </div>
             <div class="col-lg-6">
